@@ -3,7 +3,6 @@ import datetime
 import argparse
 import boto3
 
-from bs4 import BeautifulSoup
 
 from AEE import AllEarsEnglishArchiveParser
 
