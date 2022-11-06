@@ -1,3 +1,5 @@
+from bs4 import BeautifulSoup
+
 class ArchivedItems:
     def __init__(self, soup):
         self.soup = soup
