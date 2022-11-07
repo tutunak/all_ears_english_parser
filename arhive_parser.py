@@ -15,7 +15,7 @@ def parse_args():
 
 def table_put(table, items, index):
     item = table.query(
-        KeyConditionExpression=boto3.dynamodb.conditions.Key('href').eq(items[index].href)
+        KeyConditionExpression=boto3.dynamodb.conditions.Key('href').eq(items[index]['href'])
         )
 
     if item:
