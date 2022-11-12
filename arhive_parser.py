@@ -28,6 +28,7 @@ def table_put(table, items, index):
             'href': items[index]['href'],
             'title': items[index]['title'],
             'timestamp': int(datetime.datetime.now().timestamp() * 1000000),
+            'state': 0
         }
     )
 
