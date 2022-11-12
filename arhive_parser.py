@@ -18,7 +18,7 @@ def table_put(table, items, index):
         KeyConditionExpression=boto3.dynamodb.conditions.Key('href').eq(items[index]['href'])
         )
 
-    if item:
+    if item['Items']:
         print(f"Item already exists{item}")
         return
 
